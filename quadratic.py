@@ -25,11 +25,15 @@ def quadratic(a, b, c):
 a,b,c = 1,4,4
 
 
-# In[19]:
+# In[21]:
 
 
 root1, root2, message = quadratic(a, b, c)
-print(message)
-print(root1)
-print(root2)
+print(message, root1, root2)
+
+
+# In[22]:
+
+
+print(quadratic(2,3,4))
 
