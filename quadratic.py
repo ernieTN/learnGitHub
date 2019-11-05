@@ -1,27 +1,35 @@
 
 # coding: utf-8
 
-# In[9]:
+# In[17]:
 
 
 import math
+import numpy as np
 def quadratic(a, b, c):
     discriminant = b**2-4*a*c
-    root1 = (-b + math.sqrt(discriminant))/2/a
-    root2 = (-b - math.sqrt(discriminant))/2/a
-    return(root1, root2)
+    if discriminant < 0:
+        message = "no real roots"
+        root1 = np.nan
+        root2 = np.nan
+    else:
+        message = 'real roots'
+        root1 = (-b + math.sqrt(discriminant))/2/a
+        root2 = (-b - math.sqrt(discriminant))/2/a
+    return(root1, root2, message)
 
 
-# In[13]:
+# In[18]:
 
 
 a,b,c = 1,4,4
 
 
-# In[14]:
+# In[19]:
 
 
-root1, root2 = quadratic(a, b, c)
+root1, root2, message = quadratic(a, b, c)
+print(message)
 print(root1)
 print(root2)
 
