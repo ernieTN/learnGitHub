@@ -3,6 +3,6 @@ line two - add change on master branch #1
 line three
 line four
 line five
-line six
+line six - add change on master #2
 line seven
 this is line eight
