@@ -4,6 +4,6 @@ line three - change #1 on test2
 line four- change on branch #1
 line five
 line six - add change on master #2
-line seven
+line seven - change for test2 #2
 this is line eight
 add change on branch #2
